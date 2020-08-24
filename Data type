@@ -1,0 +1,25 @@
+public class DemoDataType
+{
+    public static void main(String[] args) 
+    {
+		byte x = 10;
+		System.out.println("Byte : " +x);
+		
+		float w = 12.67f  ;
+		System.out.println("Float : " +w);
+		
+		double d = 12.99;
+		System.out.println ("Double : " +d);
+		
+		char ch= 'A';
+		System.out.println( "Char : " +ch);
+		
+		boolean t= true;
+		System.out.println( "boolean : " +t);
+		
+		//non primitive
+		
+		String name="Hansini";
+		System.out.println( "String : " +name);
+	}
+}
