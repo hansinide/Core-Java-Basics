@@ -1,0 +1,20 @@
+class TestJavaDataTypeDefault {
+float y; 
+double x;
+static boolean k;
+	      public static void main(String [] arg){
+	
+	          TestJavaDataTypeDefault a= new TestJavaDataTypeDefault();
+	          System.out.println(a.y);
+	
+	           TestJavaDataTypeDefault b = new TestJavaDataTypeDefault();
+	           System.out.println(b.x);
+	
+          	System.out.println(k);
+	}
+	public void print()
+	{
+	
+	
+	}
+}
