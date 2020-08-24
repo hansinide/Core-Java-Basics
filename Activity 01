@@ -1,0 +1,48 @@
+/*
+ Activity 01
+Get input from user a,b and find large number
+ */
+package activity.pkg01;
+/**
+ *@Hansini Vithanage
+ */
+import java.util.Scanner;
+public class Activity01 {
+
+   public static void main(String[] args) {
+       
+        Scanner num=new Scanner(System.in);
+        System.out.println("Enter first number : ");
+        int A = num.nextInt();
+        
+        Scanner num2=new Scanner(System.in);
+        System.out.println("Enter second number : ");
+        int B = num2.nextInt();
+        {
+        if (A>B){
+            System.out.println ("Large number is A");
+        }
+        else {
+            System.out.println("Large number is B");
+        }
+        }
+        /*{
+        if (A>0){
+            System.out.println("A is positive");
+        }
+        else {
+            System.out.println("A is negative");
+        }}{
+        if (B>0){
+            System.out.println("B is positive");
+        }
+        else {
+            System.out.println("B is negative");}
+   }*/
+        
+        num.close();
+        num2.close();
+        
+    }
+    
+}
