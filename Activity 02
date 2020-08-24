@@ -1,0 +1,28 @@
+/*
+@Hansini Vithanage
+Program to Calculate area of Triangle in Java
+ * with user interaction. Program will prompt user to enter the 
+ * base width and height of the triangle.
+*/
+package activity.pkg01;
+import java.util.Scanner;
+
+public class Activity02 {
+    
+    public static void main(String [] args){
+    
+    Scanner a=new Scanner(System.in);
+    System.out.println("Enter width : ");
+    
+    double base= a.nextDouble();
+    
+    Scanner b=new Scanner(System.in);
+    System.out.println("Enter Hight");
+    
+    double base2= b.nextDouble();
+     
+    double area = (base*base2)/2;
+    
+    System.out.println("area of Triangle is : " +area);
+}
+}
