@@ -1,0 +1,29 @@
+class DemoInheritance
+{
+	public static void main(String [] args)
+	{
+		Triangle ob =new Triangle(20,30);
+		ob.area();
+	}
+}
+class poligon
+{
+	double width=12;
+	double height=10;
+}
+class Triangle extends poligon
+{
+	public Triangle(int x, int y)
+	{
+		this.width=x;
+		this.height=y;
+	}
+	
+	
+	public void area()
+	{
+		double a=width*height*1/2;
+		System.out.print(+a);
+	}
+
+}
