@@ -1,0 +1,43 @@
+class DemoConstructor2
+{
+	public static void main (String [] args)
+	{
+		A ob1= new A(123);
+		System.out.println(+ob1.x);
+		System.out.println(+ob1.y);
+		
+		A ob2=new A(126,456);
+		System.out.println(+ob2.x);
+		System.out.println(+ob2.y);
+		
+		A ob3=new A();
+		System.out.println(+ob3.x);
+		System.out.println(+ob3.y);
+		ob3.test();
+	}
+}
+class A
+{
+	int x;
+	int y;
+	public A()
+	{
+		x=12;
+		y=15;
+	}
+	public A(int t)
+	{
+		this.x=t;
+		y=13;
+	}
+	public A (int p, int q)
+	{
+		this.x=p;
+		this.y=q;
+	}
+	public void test()
+	{
+		System.out.println(+x);
+		System.out.println(+y);
+	}
+	}
