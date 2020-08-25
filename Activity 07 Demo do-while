@@ -1,0 +1,16 @@
+class DemoDoWhile
+{
+	public static void main (String []args)
+	{
+		int age=10;
+		do
+		{
+		
+		System.out.println("hi");
+		age++;
+		}while(age<12);
+			
+		}
+	
+}
+
