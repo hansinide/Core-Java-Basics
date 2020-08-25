@@ -1,0 +1,20 @@
+class DemoConstructor
+{
+	public static void main (String [] args)
+	{
+	A ob1=new A();
+	System.out.println(+ob1.x);
+	System.out.println(+ob1.y);
+	}
+}
+class A
+{
+	int x;
+	int y;
+	public A()
+	{
+		x=12;
+		y=15;
+	
+	}
+}
