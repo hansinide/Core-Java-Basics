@@ -1,0 +1,15 @@
+public class Ex4 {
+    public static void main(String []args)
+    {
+        try{
+            String str="Hi Hansini";
+            System.out.println(str.length());
+            char c=str.charAt(0);
+            c=str.charAt(40);
+        }
+        catch(StringIndexOutOfBoundsException e){
+            System.out.println("StringIndexOutOfBoundsException");
+        }
+    
+    }
+}
