@@ -1,0 +1,30 @@
+class OverLoading
+{
+	public static void main (String [] args)
+	{
+		Ab ob=new Ab();
+		ob.Sum();
+		System.out.println(ob.Sum(10));
+		System.out.println(ob.Sum(10,20));
+		
+	}
+}
+class Ab{
+	
+	public void Sum()
+	{
+		System.out.println("sum method");
+	}
+	public int Sum(int a, int b)
+	{
+		int z = a+b;
+		return z;
+		
+	}
+	public double Sum(int a)
+	{
+		return a;
+		
+	}
+	
+}
