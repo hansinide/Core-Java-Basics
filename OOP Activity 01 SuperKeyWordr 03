@@ -1,0 +1,28 @@
+/*
+ *use weith parent constructor.
+ */
+package superkeyword;
+
+/**
+ *
+ * @author User
+ */
+class Van{
+    void Van(){
+    System.out.println("Van is created");
+    }
+}
+class Dolphin extends Van{
+   void Dolphin(){
+     super.Van();
+     System.out.println("Child Class method");
+   }
+  
+    }
+public class parentConstructorInvoke {
+    public static void main (String [] args)
+    {
+        Dolphin ob=new Dolphin();
+        ob.Dolphin();
+    }
+}
