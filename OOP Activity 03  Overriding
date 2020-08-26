@@ -1,0 +1,33 @@
+class Overriding
+{
+	public static void main (String [] args)
+	{
+		Triangle ob=new Triangle();
+		ob.print();
+		//poligon ob2=new poligon();
+		//ob2.print();
+	}
+}
+class poligon{
+	
+	int w=12;
+	int h=10;
+	
+	public void print()
+	{
+		System.out.println("super class");
+	}
+	
+	
+	
+}
+class Triangle extends poligon
+{
+	public void print()
+	{
+		//System.out.println("Sub class");
+		super.print();
+		
+	}
+	
+}
