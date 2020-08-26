@@ -1,0 +1,30 @@
+/*
+ * use with parent method
+ */
+package superkeyword;
+class Car{
+    void run(){
+    System.out.println("Parent Class method");
+    }
+}
+class BMW extends Car{
+   void run(){
+     System.out.println("Child Class method");
+   }
+   void stop(){
+     System.out.println("Stopping.....");
+   }
+   void work(){
+     super.run();
+     stop();
+     run();
+   }
+    }
+
+public class parentMethodInvoke {
+     public static void main (String [] args)
+    {
+        BMW ob=new BMW();
+        ob.work();
+    }
+}
