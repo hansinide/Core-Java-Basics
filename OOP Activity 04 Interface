@@ -1,0 +1,21 @@
+//In iterface class
+public interface Car {
+    
+    public void drive();
+    
+}
+
+
+
+
+//In sub class implemented by interface
+public class maindemo implements Car{
+    @Override
+    public void drive() {
+        System.out.print("Hi");
+    }
+ public static void main (String [] args){
+ maindemo ob=new maindemo();
+ ob.drive();
+} 
+}
