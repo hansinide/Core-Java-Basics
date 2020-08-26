@@ -1,0 +1,27 @@
+class DemoInheritance2
+{
+	public static void main(String [] args)
+	{
+		Triangle ob1=new Triangle();
+		ob1.Max();
+		ob1.Prin();
+	}
+}
+class poligon
+{
+	double width=12;
+	double height=10;
+	public void prin()
+	{
+		System.out.println("Super class method call");
+	}
+}
+class Triangle extends poligon
+{	
+	public void Max()
+	{
+		
+		System.out.println("sub class method call");
+	}
+
+}
