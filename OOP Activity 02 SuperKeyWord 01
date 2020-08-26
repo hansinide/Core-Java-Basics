@@ -1,0 +1,22 @@
+/*
+ use super key with parent instance variable.
+ */
+package superkeyword;
+class car{
+    String color="white";
+}
+class Alto extends car{
+    String color="black";
+    void printColor(){
+    System.out.println(color);
+    System.out.println(super.color);
+    }
+}
+public class parentInstanceVariable {
+    
+    public static void main (String [] args)
+    {
+        Alto ob=new Alto();
+        ob.printColor();
+    }
+}
