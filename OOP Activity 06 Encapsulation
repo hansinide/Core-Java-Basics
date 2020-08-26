@@ -1,0 +1,33 @@
+class DemoEncapsulation
+{
+	public static void main (String [] args)
+	{
+		Test ob=new Test();
+		ob.setAge(12);
+		//ob.printValue();
+		System.out.println(ob.getAge());
+
+	}
+}
+class Test
+{
+	//can access only in this class
+	//can access outsiders using get and set method.
+	private int age;
+	private String name;
+		
+		public void setAge(int age1)
+		{
+			this.age=age1;
+			
+		}
+		//public void printValue()
+		//{
+		//	System.out.println(+age);
+		//}
+		public int getAge()
+		{
+			return age;
+		}
+	
+}
