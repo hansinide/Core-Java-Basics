@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Collection;
+
+import java.util.ArrayList;
+
+public class DemoArrayList5 {
+        public static void main(String []args)
+    {
+        ArrayList<Integer> alist=new ArrayList<Integer>();
+        alist.add(1);
+        alist.add(3);
+        alist.add(5);
+        alist.add(6);
+        alist.add(8);
+        alist.add(9);
+        
+       System.out.println(alist);
+       System.out.println("Size of arrayList: " +alist.size());
+            
+        }
+      
+        
+    }    
+
