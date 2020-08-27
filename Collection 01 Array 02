@@ -1,0 +1,14 @@
+class OneArray2
+{
+	public static void main (String [] args)
+	{
+	int[] myArray=new int[5];
+	myArray[0]=10;
+	myArray[1]=2;
+	myArray[2]=21;
+	myArray[3]=22;
+	myArray[4]=23;
+	System.out.println(" Value is : "+myArray[4]);
+	}
+}
+
