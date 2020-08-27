@@ -1,0 +1,10 @@
+class OneArray
+{
+	public static void main (String [] args)
+	{
+	int[] myArray={1,2,3,4,9 };
+	for(int i=0; i<5; i++){
+	System.out.println((i+1)+" Value is : "+myArray[i]);
+	}
+	}
+}
