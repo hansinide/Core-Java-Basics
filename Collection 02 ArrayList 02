@@ -1,0 +1,24 @@
+
+package Collection;
+
+import java.util.ArrayList;
+
+
+public class DemoArrayList2 {
+    public static void main(String []args)
+    {
+        ArrayList<String> alist=new ArrayList<String>();
+        alist.add("Vindi");
+        alist.add("Hansini");
+        alist.add("Ama");
+        alist.add("Thathsarani");
+        alist.add("Lee min hoo");
+        alist.add("Songi");
+        
+        System.out.println(alist);
+        
+        alist.set(0,"Vithanage");
+        System.out.println(alist);
+        
+    } 
+}
