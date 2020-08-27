@@ -1,0 +1,27 @@
+
+// Sort the ArrayList
+
+
+package Collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class DemoArrayList06 {
+       public static void main(String []args)
+    {
+        ArrayList<Integer> alist=new ArrayList<Integer>();
+        alist.add(1);
+        alist.add(10);
+        alist.add(5);
+        alist.add(6);
+        alist.add(8);
+        alist.add(9);
+        
+       Collections.sort(alist);
+       for(int g:alist){
+       System.out.println(g);
+      //System.out.println("Size of arrayList: " +alist.size());
+       }
+        }
+}
