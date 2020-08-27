@@ -1,0 +1,10 @@
+class TwoArray
+{
+	public static void main (String [] args)
+	{
+		int [][] myArray=new int[3][4];
+		myArray[0][0]=12;
+		System.out.println("0,0 index value: " +myArray[0][0]);
+	}
+	
+}
