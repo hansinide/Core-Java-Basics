@@ -1,0 +1,58 @@
+
+package Collection.HashMap;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+/**
+ *
+ * @author User
+ */
+public class DemoHashMap {
+       public static void main(String[] args) {
+       
+           HashMap<Integer,String> hmp=new HashMap<Integer,String>();
+           
+          //Add elements
+          hmp.put(12,"Lee min hoo");
+          hmp.put(2,"Aseka");
+          hmp.put(23,"Ajeet");
+          hmp.put(3,"Anuj");
+          hmp.put(2,"Vindi");
+          
+          //Display conent using a loop
+          Set set= hmp.entrySet();
+          Iterator iterator=set.iterator();
+          
+          while(iterator.hasNext())
+          {
+              Map.Entry mee=(Map.Entry)iterator.next();
+              System.out.print(mee.getKey());
+              System.out.print(mee.getValue());
+              
+          }
+          
+          //get value based on key
+          String var= hmp.get(2);
+          System.out.println(var);
+          
+          //Remove value based on key
+          
+          String var2=hmp.remove(3);
+          System.out.println(var2);
+          
+          Set set2=hmp.entrySet();
+          Iterator it2= set2.iterator();
+          while (it2.hasNext()){
+              Map.Entry mee2=(Map.Entry)it2.next();
+              System.out.print(mee2.getKey());
+              System.out.print(mee2.getValue());
+          }
+          
+        
+        
+        }
+}
