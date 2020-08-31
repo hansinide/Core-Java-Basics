@@ -1,0 +1,27 @@
+
+package Enum;
+
+enum people{
+    Shanaka
+}
+public class DemoEnum {
+    
+    public static final String NAME="Vindi";
+    public static void main(String [] args)
+    {
+        //final String name="Vindi";
+        System.out.println(NAME);
+        System.out.println(people.Shanaka);
+        System.out.println(EnumClass.HANSINI);
+    }
+    
+}
+
+
+
+//we can create Enum class seperatly 
+
+public enum EnumClass {
+    HANSINI
+}
+
