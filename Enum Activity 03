@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Enum;
+
+/**
+ *
+ * @author User
+ */
+public enum EnumDemo2 {
+    VINDI("PROGRAMMER"),
+    HANSIN("dancer"),
+    DEVINDI("traveler"),
+    VITHANAGE("photographer");
+    
+   private final String DESC;
+   
+   EnumDemo2(String description){
+       DESC=description;
+   
+   }
+   public String getDesc(){
+   return DESC;
+   }
+    
+}
+
+
+//Return Enum class
+public class DemoEnum {
+    
+    public static final String NAME="Vindi";
+    public static void main(String [] args)
+    {
+
+EnumDemo2 enumd=EnumDemo2.VINDI;
+System.out.println(enumd);
+System.out.println(enumd.getDesc());
+System.out.printf("%s\t%s\n",enumd,enumd.getDesc());
+            
+                
+        
+        }
+    }
+
+
