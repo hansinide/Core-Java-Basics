@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Enum;
+
+enum day{
+    MONDAY,TUESDAY,WENDSDAY,THURSDAY,FRIDAY
+}
+public class DemoEnum {
+    
+    public static final String NAME="Vindi";
+    public static void main(String [] args)
+    {
+        //final String name="Vindi";
+        System.out.println(NAME);
+      //  System.out.println(people.Shanaka);
+        //System.out.println(EnumClass.HANSINI);
+        //EnumClass obj=new EnumClss();
+        
+        day dd= day.MONDAY;
+        switch(dd){
+            case MONDAY:
+                System.out.println("Today is Monday");
+                break;
+            case TUESDAY:
+                System.out.println("Today is TUESDAY");
+                break;
+                
+           case WENDSDAY:
+                System.out.println("Today is WEDNSDAY");
+                break;
+            case THURSDAY:
+                System.out.println("Today is THURSDAY");
+                break;
+            case FRIDAY:
+                System.out.println("Today is FRIDAY");
+                break;
+            
+                
+        
+        }
+    }
+    
+}
