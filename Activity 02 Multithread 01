@@ -1,0 +1,47 @@
+
+package ThreadEx;
+
+public class TheardDempMain extends Thread {
+    public static void main (String [] args )
+    {
+        TreadDemo ft1=new TreadDemo();
+        TreadDemo ft2=new TreadDemo();
+        ft1.start();
+        ft1.start();
+        
+        
+    }
+    
+}
+
+
+
+package ThreadEx;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class TreadDemo implements Runnable{
+    
+    private Thread t;
+    public void run()
+    {
+        for (int x=1;x<=10;x++)
+        {
+            System.out.print(x+ " ");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(TreadDemo.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    public void start ()
+    {
+        t=new Thread(this,"name");
+        t.start();
+    }
+    
+    
+}
+
+
