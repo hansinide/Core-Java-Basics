@@ -1,0 +1,45 @@
+//Check Leap Year 
+package Activities;
+
+import java.util.Scanner;
+
+public class CheckLeapYear {
+    public static void main(String [] args){
+
+    int year;
+    Scanner n = new Scanner(System.in);
+    System.out.print("Enter year : ");
+    year=n.nextInt();
+    n.close();
+    
+    boolean isLeap=false;
+    if (year%4==0)
+    {
+        if(year%100==0)
+        {
+            if(year%400==0)
+            {
+                isLeap=true;
+            }
+            else
+            {
+              isLeap=false;  
+            }
+        }
+        else
+        {
+            isLeap=true;
+        }
+        
+        
+    }
+    if (isLeap==true)
+        {
+            System.out.print(year+ " this year is a Leap Year.");
+        }
+        else
+        {
+            System.out.print(year+ " this year is not a Leap Year.");
+        }
+    
+}}
