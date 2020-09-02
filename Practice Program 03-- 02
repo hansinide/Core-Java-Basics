@@ -1,0 +1,45 @@
+//palindram Integer 
+
+
+package Activities;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+public class palindram_02 {
+    public static void main(String [] agrs)
+    {
+        System.out.print("Enter Number : ");
+        int palindrome = new Scanner(System.in).nextInt();
+        
+        if(isPalindrome(palindrome))
+        {
+            System.out.println("this is palindrome : " +palindrome);
+        }
+         else
+        {
+            System.out.println("this is not100 palindrome : " +palindrome);
+        }
+    }
+    public static boolean isPalindrome(int number)
+    {
+        int palindrome=number;
+        int reverse = 0;
+        
+        while(palindrome!=0)
+        {
+            int reminder = palindrome%10;
+            reverse = reverse + reminder;
+            palindrome = palindrome / 10;
+        }
+        if(number == reverse)
+        {
+            return true;
+            
+        }
+        return false;
+    }
+}
