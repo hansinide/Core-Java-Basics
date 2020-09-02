@@ -1,0 +1,30 @@
+//largest Of Three Numbers Using Ternary Operator
+
+package Activities;
+
+import java.util.Scanner;
+
+public class largestOfThreeNumbersUsingTernaryOperator {
+    public static void main(String [] args)
+    {
+        //variable num = (expression) ? value if true : value if false
+        int num1,num2,num3,result,temp;
+        Scanner n=new Scanner (System.in);
+        
+        System.out.print("Enter number 1 : ");
+        num1=n.nextInt();
+        
+        System.out.print("Enter number 2 : ");
+        num2=n.nextInt();
+        
+        System.out.print("Enter number 3 : ");
+        num3=n.nextInt();
+        n.close();
+        temp = num1>num2?num1:num2;
+        result=num3>temp?num3:num2;
+        
+        System.out.println("Large number : " +result);
+    }
+
+    
+}
