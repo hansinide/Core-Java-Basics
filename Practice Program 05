@@ -1,0 +1,40 @@
+
+
+//REMOVE DUPLICATES FROM AN ARRAY
+
+
+package Activities;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+
+public class RemoveDuplicateFromArray {
+    public static void main (String [] args )
+    {
+        List<Integer> ph=new ArrayList<Integer>();
+        
+        ph.add(1);
+        ph.add(3);
+        ph.add(4);
+        ph.add(5);
+        ph.add(5);
+        ph.add(5);
+        ph.add(6);
+        ph.add(8);
+        ph.add(9);
+        ph.add(9);
+       
+        System.out.println(ph);
+        
+        LinkedHashSet<Integer> ph2= new LinkedHashSet<Integer>(ph);
+    
+        ph.clear();
+        
+        ph.addAll(ph);
+        
+        System.out.println(ph2);
+    }
+    
+    
+}
