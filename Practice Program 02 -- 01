@@ -1,0 +1,34 @@
+//Aprime number
+package Activities;
+
+import java.util.Scanner;
+
+
+public class APrimeNumber {
+  public static void main(String [] args)
+  {
+      System.out.println("Enter number : ");
+      int num = new Scanner(System.in).nextInt();
+      
+      for(int i=0; i<=num; i++)
+      {
+          if (i==2 || i==3)
+          {
+            System.out.println(i);
+          }
+          if(i%2 == 0)
+          {
+            System.out.println(i);
+
+          }
+          if ((i*i-1)%24==0)
+          {
+              System.out.println(i);
+          }
+          else
+          {
+              i++;
+          }
+      }
+  }  
+}
