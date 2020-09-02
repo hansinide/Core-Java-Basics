@@ -1,0 +1,33 @@
+//Palindrome Strings
+package Activities;
+
+public class palidram {
+     public static void main(String [] args)
+    {
+        
+        System.out.println("Is aaa palindrom?: " + isPalindramString("aaa"));
+        System.out.println("Is abc palindrom?: " + isPalindramString("abc")); 
+        System.out.println("Is bbbb palindrom?: " + isPalindramString("bbbb")); 
+        System.out.println("Is defg palindrom?: " + isPalindramString("defg"));
+
+        
+        
+    }
+     public static boolean isPalindramString(String txt)
+     {
+         String reverse=reverse(txt);
+         if(txt.equals(reverse))
+         {
+             return true;
+         }
+         return false;
+     }
+     public static String reverse(String inpt)
+     {
+         if(inpt==null || inpt.isEmpty())
+         {
+             return inpt;
+         }
+         return inpt.charAt(inpt.length()-1)+ reverse(inpt.substring(0,inpt.length()-1));
+     }
+}
