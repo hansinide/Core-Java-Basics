@@ -1,0 +1,18 @@
+//Sum of array elements
+
+package Activities;
+
+
+public class SumOfArrayElements {
+    public static void main(String [] args)
+{
+    int[] a={10,5,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95};
+    int sum=0;
+    for(int num:a)
+    {
+        sum=sum+num;
+    }
+    System.out.println("Sum of array element : " +sum);
+}
+
+}
