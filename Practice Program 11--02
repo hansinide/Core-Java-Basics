@@ -1,0 +1,27 @@
+//Sum of Array elements
+
+package Activities;
+
+import java.util.Scanner;
+
+
+public class SumOfArrayElements {
+    public static void main(String [] args)
+{
+    Scanner n = new Scanner (System.in);
+    int[] a = new int[10];
+    int sum=0;
+    System.out.println("Enter element : ");
+    
+    for(int i=0; i<10; i++)
+    {
+        a[i]=n.nextInt();
+    }
+    for(int num : a)
+    {
+        sum=sum+num;
+    }
+    System.out.println("Sum of array element : " +sum);
+}
+
+}
