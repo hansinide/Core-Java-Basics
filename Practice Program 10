@@ -1,0 +1,25 @@
+//Circle Demo
+
+
+package Activities;
+
+import java.util.Scanner;
+
+
+public class CircleDemo {
+    static Scanner n=new Scanner(System.in);
+    public static void main(String [] args)
+    {
+        double r;
+        System.out.print("Enter radius : ");
+        r=n.nextDouble();
+        n.close();
+        
+        double area=Math.PI*(r*r);    
+        System.out.println("Area :  " +area);
+        
+        double cimcumfernce=Math.PI*2*r;
+        System.out.println("Circumference : " +cimcumfernce);
+        
+    }
+}
